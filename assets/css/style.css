@@ -1,0 +1,81 @@
+body {
+  background-color: #f3f3f3;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("../img/ondas.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+img {
+  max-width: 100%;
+}
+
+.primary {
+  padding: 70px 0;
+  background-image: url("../img/celular.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left calc(50% + 350px);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-height: 150px;
+  margin-bottom: 60px;
+}
+
+.google {
+  max-height: 72px;
+  margin-left: -12px;
+}
+
+.apple {
+  max-height: 55px;
+  position: relative;
+  top: -8px;
+}
+
+p {
+  font-size: 21px;
+  margin-bottom: 50px;
+}
+
+p:first-of-type {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  body {
+    background-position: bottom -190px right -250px;
+    background-size: cover;
+  }
+
+  .primary {
+    align-items: normal;
+    text-align: center;
+    background-position: bottom 0px center;
+    background-size: 960px;
+    min-height: 1012px;
+  }
+
+  .apple {
+    max-height: 46px;
+  }
+
+  .google {
+    max-height: 62px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .logo {
+    max-height: 120px;
+    margin-bottom: 50px;
+  }
+}
